@@ -12,10 +12,15 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <style>
-     
-    
+      a {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Inherits color from parent element */
+      }
 
-      
+      /* Hover effect */
+      a:hover {
+        color: #5a6c57; /* Adds a soft green color on hover */
+      }
     </style>
   </head>
 
@@ -46,7 +51,10 @@
         class="p-5 mb-4 bg-body-tertiary rounded-3 startup-overview"
         style="color: white"
       >
-        <div class="container-fluid py-5" style="position: relative; z-index: 1;">
+        <div
+          class="container-fluid py-5"
+          style="position: relative; z-index: 1"
+        >
           <h1 class="display-5 fw-bold">Overview of the Startup Business.</h1>
           <p class="col-md-8 fs-5">
             The startup is a tech company specializing in innovative software
@@ -61,7 +69,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- end overview -->
 
     <!-- Office Location -->
@@ -70,15 +78,21 @@
         Office location and Layout
       </h1>
       <div class="container px-5 py-5">
-        <img
-          src="./img/ground_floor.jpg"
-          class="img-fluid border rounded-3 shadow-lg mb-4"
-          alt="Example image"
-          width="400"
-          height="auto"
-          loading="lazy"
-        />
-        <p><b>Nama lokasi</b></p>
+        <a href="https://maps.app.goo.gl/QGYqqNcwbprstYC8A"
+          ><img
+            src="./img/location.png"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="Example image"
+            width="400"
+            height="auto"
+            loading="lazy"
+        /></a>
+        <a href="https://maps.app.goo.gl/QGYqqNcwbprstYC8A">
+          <h3 class="fw-bold">Taman Malim Permai</h3>
+          <p class="fs-5">
+            <i>Jalan malim jaya 2/7A, Taman Malim Jaya, Bachang, Melaka</i>
+          </p>
+        </a>
       </div>
     </div>
 
@@ -174,84 +188,16 @@
     </div>
     <!-- end Second floor -->
 
-    <div class="container py-5">
-      <h1 class="display-4 text-center text-body-emphasis mb-5">
-        List of Network Hardware Specifications
-      </h1>
+    <!-- Target user specifications  -->
 
-      <!-- Row for displaying hardware specs -->
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <h4>Router</h4>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Brand: Cisco</h5>
-              <p class="card-text">Model: Catalyst 9000</p>
-              <ul>
-                <li>Speed: 10 Gbps</li>
-                <li>Ports: 24 Ethernet, 4 SFP+</li>
-                <li>Management: Web-based, CLI</li>
-                <li>Price: $2,500</li>
-              </ul>
-            </div>
-            <div class="card-footer text-center">
-              <button class="custom-button">View Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <h4>Switch</h4>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Brand: TP-Link</h5>
-              <p class="card-text">Model: TL-SG1024</p>
-              <ul>
-                <li>Ports: 24 Gigabit Ethernet</li>
-                <li>Speed: 1 Gbps</li>
-                <li>Mounting: Rack-mountable</li>
-                <li>Price: $300</li>
-              </ul>
-            </div>
-            <div class="card-footer text-center">
-              <button class="custom-button">View Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <h4>Firewall</h4>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Brand: Fortinet</h5>
-              <p class="card-text">Model: FortiGate 60E</p>
-              <ul>
-                <li>Ports: 10 x GE RJ45</li>
-                <li>Speed: 1 Gbps</li>
-                <li>Security: IPS, VPN, Antivirus</li>
-                <li>Price: $400</li>
-              </ul>
-            </div>
-            <div class="card-footer text-center">
-              <button class="custom-button">View Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Target user specifications  -->
 
     <!-- Optional footer -->
-    <footer class="text-center py-4" style="background-color: #5a6c57; color: white">
-      <p>&copy; 2024 Your Startup. All rights reserved.</p>
+    <footer
+      class="text-center py-4"
+      style="background-color: #5a6c57; color: white"
+    >
+      <p>&copy; 2024 D4 company. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
