@@ -178,4 +178,66 @@ th,td {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+#job {
+  background: linear-gradient(335deg, #28a745, #525b44);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.role-card {
+  background: white;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.role-card:hover {
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.role-card h3 {
+  font-size: 1.8rem;
+  color: #28a745;
+}
+.role-card p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.role-card-wrapper .role-card {
+  animation: fadeUp 1s forwards;
+}
+.role-card-wrapper .role-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.role-card-wrapper .role-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.role-card-wrapper .role-card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.role-card-wrapper .role-card:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.role-card-wrapper .role-card:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.role-card-wrapper .role-card:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.role-card-wrapper .role-card:nth-child(7) {
+  animation-delay: 2.1s;
+}
 
