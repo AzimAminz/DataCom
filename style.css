@@ -65,6 +65,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px;
   color: white;
   position: relative;
   z-index: 1;
@@ -79,6 +80,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   z-index: 0;
 }
 
@@ -110,4 +112,70 @@ th,td {
   font-weight: bold;
   background-color: #d8e3d5;
 }
+
+.floor-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.floor-card h3 {
+  background-color: #5a6c57;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+.floor-card ul {
+  padding-left: 20px;
+}
+.floor-card ul li {
+  line-height: 1.8;
+}
+.divider {
+  height: 2px;
+  background-color: #5a6c57;
+  margin: 20px 0;
+}
+
+.spec-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.spec-card .card-header {
+  background-color: #5a6c57;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+.spec-card .icon {
+  font-size: 50px;
+  color: #5a6c57;
+  margin-bottom: 10px;
+}
+.spec-card .card-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+.spec-card .card-body ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+.spec-card .card-body ul li span {
+  font-weight: bold;
+}
+
+.map:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 

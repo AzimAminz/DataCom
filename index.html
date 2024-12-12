@@ -21,6 +21,12 @@
       a:hover {
         color: #5a6c57; /* Adds a soft green color on hover */
       }
+   
+    img {
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     </style>
   </head>
 
@@ -49,7 +55,7 @@
     <div class="container py-4">
       <div
         class="p-5 mb-4 bg-body-tertiary rounded-3 startup-overview"
-        style="color: white"
+        style="color: white ;"
       >
         <div
           class="container-fluid py-5"
@@ -73,15 +79,15 @@
     <!-- end overview -->
 
     <!-- Office Location -->
-    <div class="px-4 pt-5 text-center" style="background-color: whitesmoke">
+    <div class="px-4 pt-5 text-center" style="background-color: whitesmoke ; ">
       <h1 class="display-4 fw-bold text-body-emphasis">
         Office location and Layout
       </h1>
-      <div class="container px-5 py-5">
+      <div class="container px-5 py-5 ">
         <a href="https://maps.app.goo.gl/QGYqqNcwbprstYC8A"
           ><img
             src="./img/location.png"
-            class="img-fluid border rounded-3 shadow-lg mb-4"
+            class="img-fluid border rounded-3 shadow-lg mb-4 map"
             alt="Example image"
             width="400"
             height="auto"
@@ -99,7 +105,7 @@
     <!-- end office Location -->
 
     <!-- Ground floor -->
-    <div style="background-color: whitesmoke; color: black">
+    <div style="background-color: #e8f5e9; color: black; ">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -159,7 +165,7 @@
     <!-- end 1st floor -->
 
     <!-- Second floor -->
-    <div style="background-color: whitesmoke; color: black">
+    <div style="background-color:#e8f5e9; color: black ;border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -188,8 +194,124 @@
     </div>
     <!-- end Second floor -->
 
-    <!-- Target user specifications  -->
+    <!-- Networking requirements for each department.   -->
+    <div class="container py-5" >
+      <h1 class="text-center mb-4">Networking Requirements for Each Department</h1>
 
+      <!-- Ground Floor -->
+      <div class="floor-card">
+        <h3>Ground Floor</h3>
+        <ul>
+          <li><strong>Guest Room:</strong> Wi-Fi Access Points for strong and reliable coverage. Guest network segregation for security and privacy.</li>
+          <li><strong>Reception Counter:</strong> Ethernet Ports for wired connections and Wi-Fi Access Points for reliable coverage.</li>
+          <li><strong>Café:</strong> Ethernet Ports for wired connections, Wi-Fi Access Points, and guest network segregation for security.</li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- First Floor -->
+      <div class="floor-card">
+        <h3>First Floor</h3>
+        <ul>
+          <li><strong>Office Workplace:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, managed network switches for throughput, and VPN access for remote employees.</li>
+          <li><strong>Multimedia Room:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, and dedicated network storage for large multimedia files.</li>
+          <li><strong>Rest Room / Pantry:</strong> Wi-Fi Access Points for employee convenience.</li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Second Floor -->
+      <div class="floor-card">
+        <h3>Second Floor</h3>
+        <ul>
+          <li><strong>Headquarter Room:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, and secure network segmentation for sensitive data.</li>
+          <li><strong>Server Room:</strong> High-capacity network switches, redundant power supply, cooling systems, and physical/network security.</li>
+          <li><strong>Human Resource Room:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, and secure network segmentation for employee data.</li>
+          <li><strong>Meeting Room:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, and AV equipment integration for seamless conferencing.</li>
+          <li><strong>Database Room:</strong> High-capacity network switches, redundant storage solutions, and security measures for sensitive data.</li>
+          <li><strong>Control Room:</strong> High-Speed Ethernet Ports, Wi-Fi Access Points, and network monitoring tools for performance and security.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Networking requirements for each department.   -->
+
+
+    <!-- Target user specifications  -->
+    <div class="container py-5">
+      <h1 class="text-center mb-5">Target User Specifications</h1>
+
+      <div class="row gy-4">
+        <!-- Software Developer, System Analyst, Project Manager -->
+        <div class="col-md-4">
+          <div class="card spec-card">
+            <div class="card-header">
+              Software Developer, System Analyst, Project Manager
+            </div>
+            <div class="card-body text-center">
+              <i class="icon bi bi-laptop"></i>
+              <ul>
+                <li><span>Processor:</span> 13th Gen Intel Core i5-13600k</li>
+                <li><span>OS:</span> Windows 11 Home</li>
+                <li><span>Graphic Card:</span> NVIDIA RTX 3060 8GB GDDR6</li>
+                <li><span>Monitor:</span> Viewsonic VA2715-H</li>
+                <li><span>Memory:</span> Kingston 16GB DDR5</li>
+                <li><span>Storage:</span> Samsung 980 PRO 2TB</li>
+                <li><span>Keyboard:</span> Amargeddon MKA 7C</li>
+                <li><span>Mouse:</span> Logitech G304 (White)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Designer, Multimedia Editor -->
+        <div class="col-md-4">
+          <div class="card spec-card">
+            <div class="card-header">Graphic Designer, Multimedia Editor</div>
+            <div class="card-body text-center">
+              <i class="icon bi bi-brush"></i>
+              <ul>
+                <li><span>Processor:</span> 13th Gen Intel Core i7-13700k</li>
+                <li><span>OS:</span> Windows 11 Home</li>
+                <li><span>Graphic Card:</span> NVIDIA RTX 4060 8GB GDDR6</li>
+                <li><span>Monitor:</span> Gigabyte M27Q</li>
+                <li><span>Memory:</span> Kingston 16GB DDR5</li>
+                <li><span>Storage:</span> Samsung 980 PRO 2TB</li>
+                <li><span>Keyboard:</span> Amargeddon MKA 7C</li>
+                <li><span>Mouse:</span> Logitech G304 (White)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CEO, Treasurer, etc. -->
+        <div class="col-md-4">
+          <div class="card spec-card">
+            <div class="card-header">
+              CEO, Treasurer, Secretary, Finance Executive, HR Executive,
+              Database Admin, Data Analyst, Receptionist
+            </div>
+            <div class="card-body text-center">
+              <i class="icon bi bi-person"></i>
+              <ul>
+                <li><span>Processor:</span> 13th Gen Intel Core i3-13100</li>
+                <li><span>OS:</span> Windows 11 Home</li>
+                <li><span>Graphic Card:</span> Integrated Intel UHD Graphics</li>
+                <li><span>Monitor:</span> MSI PRO MP251</li>
+                <li><span>Memory:</span> Kingston 16GB DDR5</li>
+                <li><span>Storage:</span> Samsung 980 PRO 2TB</li>
+                <li><span>Keyboard:</span> Amargeddon MKA 7C</li>
+                <li><span>Mouse:</span> Logitech G102 (White)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Target user specifications  -->
 
     <!-- Optional footer -->
@@ -200,6 +322,11 @@
       <p>&copy; 2024 D4 company. All rights reserved.</p>
     </footer>
 
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
