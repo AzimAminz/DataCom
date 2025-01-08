@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DITS 2313</title>
+    <title>Network Topology</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,47 +11,163 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  
-  <header class="d-flex justify-content-center py-3 co">
-    <ul class="nav nav-pills custom-nav-pills">   
-      <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills custom-nav-pills">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link" >Introduction</a>
-          </li>
-          <li class="nav-item">
-            <a href="./hardware.html" class="nav-link">Hardware and Software</a>
-          </li>
-          <li class="nav-item">
-            <a href="./network.html" class="nav-link active">Network Topology</a>
-          </li>
-          <li class="nav-item">
-            <a href="./ipAddress.html" class="nav-link">IP Addressing</a>
-          </li>
-          <li class="nav-item">
-            <a href="./about.html" class="nav-link " >About Us</a>
-          </li>
-        </ul>
-      </header>
-    </ul>
-  </header>
-
-
-  <body>
+    <style>
+      
+      
+      
+      .card {
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card-title {
+        color: #343a40;
+      }
     
-   
-    <footer
-      class="text-center py-4"
-      style="background-color: #5a6c57; color: white"
-    >
-      <p>&copy; 2024 D4 company. All rights reserved.</p>
+      .fade-in {
+        animation: fadeIn 2s;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills custom-nav-pills">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a href="./hardware.html" class="nav-link">Hardware and Software</a>
+        </li>
+        <li class="nav-item">
+          <a href="./network.html" class="nav-link active">Network Topology</a>
+        </li>
+        <li class="nav-item">
+          <a href="./ipAddress.html" class="nav-link">IP Addressing</a>
+        </li>
+        <li class="nav-item">
+          <a href="./ISP.html" class="nav-link">Internet Access and ISP</a>
+        </li>
+        <li class="nav-item">
+          <a href="./conclusion.html" class="nav-link">Conclusion</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">About Us</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="container py-5 fade-in">
+      <h1 class="text-center mb-4">Network Topology</h1>
+      <p class="lead">
+        The virtual topology described in the document outlines a network spread
+        across three floors of a building, each with its own switch to manage
+        network traffic.
+      </p>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <p>
+            On Floor 1, Switch 1 connects to two desktop PCs and a wireless
+            access point, while the modem and router handle the internet
+            connection for the entire building. Floor 2 features Switch 2,
+            which connects to 16 desktop PCs and a wireless access point,
+            indicating a high density of wired connections. Floor 3 has Switch
+            3, connecting to six laptops, three desktop PCs, and a wireless
+            access point. Each floor's switches are interconnected to ensure
+            seamless communication across floors.
+          </p>
+          <p>
+            The router and modem on Floor 2 manage the internet connection,
+            distributing it to the switches on each floor. Wireless access
+            points on each floor provide Wi-Fi coverage, allowing mobile
+            devices to connect to the network. The network's design ensures
+            redundancy, with multiple switches and access points minimizing
+            disruption if one device fails, and scalability, allowing
+            additional devices to be easily added by connecting them to the
+            nearest switch or access point. This setup provides a stable and
+            high-speed wired network, along with comprehensive wireless
+            coverage throughout the building.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-center my-4">Network Topology For Each Floor</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/floor1.jpg"
+              alt="Floor 1 Topology"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Floor 1</h5>
+              <p class="card-text">
+                Switch 1 connects to two desktop PCs and a wireless access
+                point, ensuring connectivity for devices on the ground floor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/floor2Topology.jpg"
+              alt="Floor 2 Topology"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Floor 2</h5>
+              <p class="card-text">
+                Switch 2 connects to 16 desktop PCs and a wireless access
+                point, serving as the main hub for the building's network.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/floor3.jpg"
+              alt="Floor 3 Topology"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Floor 3</h5>
+              <p class="card-text">
+                Switch 3 connects to six laptops, three desktop PCs, and a
+                wireless access point, ensuring coverage for upper-floor users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center mb-4">Full Overview</h2>
+      <img src="./img/fullFloor.png" alt="fullFloor" class="img-fluid my-4" />
+
+    </main>
+
+    <footer class="text-center py-4" style="background-color: #5a6c57; color: white">
+      <p>&copy; 2024 D4 Company. All rights reserved.</p>
     </footer>
+
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  
 </html>
